@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Sweet Question For You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Comfortaa', cursive;
+            background-color: #fbcfe8; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 1rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff; /* White card background */
+            padding: 3rem 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 10px -4px rgba(0, 0, 0, 0.08);
+            max-width: 500px;
+            width: 100%;
+            border: 3px solid #fbcfe8; /* Matching border color */
+        }
+        h1 {
+            font-family: 'Pacifico', cursive; /* A charming script font for the question */
+            color: #db2777; /* Deep rose pink for the question */
+            font-size: 2.8rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.2;
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically on small screens */
+            gap: 1.5rem;
+            margin-top: 2rem;
+            justify-content: center; /* Center horizontally for larger screens */
+        }
+        .btn {
+            padding: 1.2rem 2.5rem;
+            border-radius: 9999px; /* Pill shape */
+            font-size: 1.5rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none; /* Remove default link underline */
+            display: inline-block; /* Ensure padding and dimensions apply */
+        }
+        .btn-yes {
+            background-color: #f0abfc; /* Light purple-pink */
+            color: #fff;
+            border: 2px solid #e879f9;
+        }
+        .btn-yes:hover {
+            background-color: #e879f9; /* Darker purple-pink on hover */
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .btn-no {
+            background-color: #fee2e2; /* Very light red-pink */
+            color: #ef4444; /* Red for 'No' */
+            border: 2px solid #fca5a5;
+        }
+        .btn-no:hover {
+            background-color: #fca5a5; /* Darker red-pink on hover */
+            color: #fff;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 640px) { /* For screens larger than mobile */
+            .button-group {
+                flex-direction: row; /* Buttons side-by-side */
+            }
+        }
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .btn {
+                font-size: 1.2rem;
+                padding: 1rem 2rem;
+            }
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pwede ba akong manligaw?</h1>
+
+        <div class="button-group">
+            <a href="Confessionyay.html" class="btn btn-yes" role="button">
+                Pwede! :D
+            </a>
+            <a href="sadge.html" class="btn btn-no" role="button">
+                Hmm, hindi pa ako ready e :(
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
